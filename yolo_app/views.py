@@ -47,8 +47,6 @@ def generate_pdf(count: int, image_path: str, pdf_path: str):
     c.setFont(FONT_NAME, 16)
     c.drawString(72, height - 72, "Отчёт")
     c.setFont(FONT_NAME, 14)
-    c.drawString(72, height - 72, "Счётчик посетителей магазина")
-    c.setFont(FONT_NAME, 14)
     c.drawString(72, height - 100, f"Найдено посетителей: {count}")
 
     img = ImageReader(image_path)
