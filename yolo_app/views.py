@@ -90,7 +90,6 @@ def index(request):
         generate_pdf(count, result_path, pdf_path)
         pdf_url = settings.MEDIA_URL + pdf_name
 
-        # сохраняем в БД
         Report.objects.create(
             original_image=filename,
             result_image=result_name,
